@@ -1,0 +1,138 @@
+@keyframes sky {
+    0%   {background-color: rgb(213, 202, 95);}
+    25%  {background-color: rgb(255, 193, 100);}
+    50%  {background-color: rgb(206, 107, 158);}
+    100% {background-color: rgb(98, 81, 117);} }
+
+
+    @keyframes sky2 {
+        0%   {background-color: rgb(211, 201, 110);}
+        25%  {background-color: rgb(252, 201, 125);}
+        50%  {background-color: rgb(207, 130, 170);}
+        100% {background-color: rgb(106, 94, 119);} }
+
+body {
+    
+
+    animation-name: sky;
+    animation-duration: 15s;
+
+}
+
+
+/*  LAYOUT */
+
+.site-name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+
+
+}
+
+
+      
+#navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    overflow: hidden;
+  background-color: #efb279;
+  text-align: center;
+  align-content: space-between;
+  color: #ffffff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: row;
+    justify-content: space-evenly;
+    animation-name: sky2;
+    animation-duration: 15s;
+
+}
+
+
+.top-nav a:hover {
+        background-color: #fff9cc;
+        color: black;
+        animation-name: sky2;
+    animation-duration: 15s;
+
+
+}
+
+.header-container {
+    background: #efb279;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    animation-name: sky2;
+    animation-duration: 15s;
+
+}
+
+.header-content {
+    color: #220f01;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin: 0;
+}
+
+.hero-content{
+width: 100%;
+max-width: 100%;
+
+}
+
+
+.content {
+    color: #F1F1F1;
+    width: 90%;
+    max-width: 90%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    margin: 0;
+   
+
+
+}
+
+.form-content{
+background-color: rgb(255, 255, 255); 
+opacity:0.6;
+width: 100%;
+padding: 100px;
+border-radius: 25px;
+box-shadow: 5px 5px 20px rgb(25, 0, 82);
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16pt;
+color: #210e02;
+
+}
+
+
+
+
+@media (max-width: 600px) {
+    .content {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+
+
+
+    
+
+    
+    
+
+      
+    
