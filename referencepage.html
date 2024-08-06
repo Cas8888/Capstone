@@ -39,29 +39,12 @@
   <div class="referencecontent">
 
     <img alt="" id="referenceimage"
-    width ="30%"    
->
+    width ="30%"    >
 
-<script>
+    <p class="imageDetails"> Photo created by <a id="creator" href="#"> NAME </a> 
 
-let clientID = "eFxf3eHFBxEfNMtsuI6dRUehzsReHWuXFpGZusFVGIU";
-let api= `https://api.unsplash.com/photos/random/?client_id=${clientID}`;
+<script src="Java.js"></script>
 
-let referenceImage = document.querySelector ('#referenceimage');
-
-fetch (api)
-
-.then ((response) => response.json ())
-.then (function (jsonData) {
-referenceImage.src = jsonData.urls.regular;
-
-
-})
-
-
-
-
-</script>
 
 
 

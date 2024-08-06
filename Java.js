@@ -1,12 +1,19 @@
-//counter//
+let clientID = "eFxf3eHFBxEfNMtsuI6dRUehzsReHWuXFpGZusFVGIU";
+let api= `https://api.unsplash.com/photos/random/?client_id=${clientID}`;
+
+let referenceImage = document.querySelector ('#referenceimage');
+let imageLink = document.querySelector ("#imageLink");
+let creator = document.querySelector ("#creator")
 
 
-var i = 0;
+fetch (api)
 
-function timedCount() {
-  i = i + 1;
-  postMessage(i);
-  setTimeout("timedCount()",500);
-}
+.then ((response) => response.json ())
+.then (function (jsonData) {
+referenceImage.src = jsonData.urls.regular;
 
-timedCount();
+
+creator.innerText = jsonData.user.name;
+creator.setAttribute("href", jsonData.user.portfolio_url);
+
+})
