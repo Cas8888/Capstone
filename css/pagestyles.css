@@ -25,6 +25,7 @@ body {
 .site-name {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
+width: 30%;
 
 
 }
@@ -47,6 +48,7 @@ body {
     justify-content: space-evenly;
     animation-name: sky2;
     animation-duration: 15s;
+    display: flex;
 
 }
 
@@ -81,6 +83,8 @@ body {
     align-items: center;
     padding: 12px;
     margin: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .hero-content{
@@ -104,6 +108,18 @@ max-width: 100%;
 
 
 }
+
+.referencecontent {
+width: 100%;
+display: flex;
+color:rgb(27, 19, 255);
+align-items: center;
+justify-content: space-around;
+
+
+}
+
+
 
 .form-content{
 background-color: rgb(255, 255, 255); 
