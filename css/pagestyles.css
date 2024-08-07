@@ -68,6 +68,17 @@ color: #99daf4;
 
 }
 
+
+
+#invalidsubject {
+color: red;
+font-size: 10px;
+font-family:Arial, Helvetica, sans-serif;
+display: none;
+
+
+}
+
 .header-container {
     background: #1e1e1e;
     display: flex;
@@ -80,7 +91,7 @@ color: #99daf4;
 }
 
 .header-content {
-    color: #220f01;
+    color: #ffffff;
     width: 100%;
     max-width: 100%;
     display: flex;

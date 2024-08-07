@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/pagestyles.css">
     <link rel="icon" href="XXXXXX" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
   </head>
 <body>
 
@@ -37,36 +37,40 @@
 
 <section class="content">
     <div class="content1">
+
+        
+
         <center>
         <h1>
             Welcome to the Reference Image Generator!
             
                             </h1>
             <p>Trying to practice your skills but don't know what to draw? We've got you covered! Our site provides you with instant reference images to get you going immediately! 
+                
                 Want to sell or display your work but are worried about copyright? No problem! All images are sourced from Unsplash.com and are royalty free and licensed for commercial/non-commercial use.
+<br><br>Draw along with the 1 minute countdown for quick warmups or practice with the generated photo for as long as you like!
+<br>Don't like the photo we gave you? Click 'New Photo' to grab another!
                 <br>
                 Fill out the form below to generate a reference image!
-            Or click 'Random' to get drawing immediately!</p>
-
+            </p>
+<br><br><br>
             <form action="/referencepage.html" method="get" id="form1">
               
                 <label for="subject">Subject</label><br><br>
-                <input type="text" id="subject" name="subject"><br><br>
-                <label for="color">Color</label><br><br>
-                <input type="text" id="color" name="color"><br><br>
-                <label for="Photographer Name">Photographer Name</label><br><br>
-                <input type="text" id="Photographer Name" name="Photographer Name"><br><br><br>
-                <input type="submit" value="Submit">
+                <input type="text" id="subject" name="subject"><br>
+                <p id="invalidsubject"> Please enter a valid subject. Avoid using numbers. </p>
+<br><br>
+                
 
-
+ 
 
                 </form>
-                <a href="referencepage.html"> <Button> Test Button </Button> </a>
+                <a href="referencepage.html"> <Button id="Button"> Draw! </Button> </a>
             </center>
             
 
 <style>
-input[type=submit] {
+#Button {
         background-color: #99daf4;
         border: none;
         border-radius: 10px;
@@ -81,7 +85,7 @@ input[type=submit] {
         text-decoration: none;
         cursor: pointer;
       }
-input[type=submit]:hover {
+#Button:hover {
     opacity:1
 }
 </style>
@@ -94,7 +98,7 @@ input[type=submit]:hover {
    <section class="Footer">
 
 
-    
+
    </section>
 
 
@@ -113,7 +117,7 @@ input[type=submit]:hover {
 
 
 
-
+   <script src="Java.js"></script>
 
 
 
